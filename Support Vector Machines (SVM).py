@@ -34,7 +34,8 @@ user_monthly_charge=float(input("Enter the monthly charge: "))
 user_input=np.array([[user_age,user_monthly_charge]])
 
 prediction=svc_model.predict(user_input)
-if prediction[0]==0:
+if prediction[0]==1:
     print('the customer will churn')
 else:
+
     print('the customer will not churn')
